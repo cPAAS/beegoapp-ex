@@ -81,8 +81,9 @@
           "type": "Source",
           "sourceStrategy": {
             "from": {
-              "kind": "DockerImage",
-              "name": "172.30.117.244:5000/openshift/s2i-golang-ceyes:1.4.3"
+              "kind": "ImageStreamTag",
+              "namespace": "openshift",
+              "name": "s2i-golang-ceyes:1.4.3"
             }
           }
         },
